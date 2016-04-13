@@ -135,6 +135,9 @@ class WPFAQ_Manager_Data {
 			'orderby'         => 'menu_order',
 			'order'           => 'ASC',
 		);
+		
+		// Filter the base args
+		$base = apply_filters( 'wpfaq_main_shortcode_args', $args );
 
 		// If we are using the "all" feature, set the args with that.
 		// Otherwise, use the paged and posts_per_page setup.
